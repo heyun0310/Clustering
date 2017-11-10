@@ -1,4 +1,4 @@
-package Clustering;
+package Clustering.Utils;
 
 public class Point {
 
@@ -40,6 +40,16 @@ public class Point {
         double distance;
         Point point = (Point)obj;
         distance = Math.sqrt(Math.abs(point.x - this.x) * Math.abs(point.x - this.x) + Math.abs(point.y - this.y) * Math.abs(point.y - this.y));
+        return distance;
+    }
+
+    public double calDistanceWithPointAndCluster(Object... objects)
+    {
+        double distance = 0;
+        for (Object obj:objects) {
+            distance += this.calDistance(obj);
+        }
+        distance /= objects.length;
         return distance;
     }
 

@@ -8,7 +8,7 @@ public class Main {
 
         GUI myGUI = new GUI();
         myGUI.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        myGUI.setSize(500,300);
+        myGUI.setSize(1000,800);
         myGUI.setVisible(true);
     }
 }

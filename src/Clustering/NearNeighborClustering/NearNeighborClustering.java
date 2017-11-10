@@ -1,10 +1,12 @@
-package Clustering;
+package Clustering.NearNeighborClustering;
+
+import Clustering.Utils.Point;
 
 import java.util.LinkedList;
 
 public class NearNeighborClustering {
 
-    public LinkedList<LinkedList<Clustering.Point>> cluster = new LinkedList<LinkedList<Clustering.Point>>();
+    public LinkedList<LinkedList<Point>> cluster = new LinkedList<LinkedList<Point>>();
     double threshold;
 
     public NearNeighborClustering(double threshold)
